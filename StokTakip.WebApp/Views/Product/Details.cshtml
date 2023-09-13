@@ -1,0 +1,17 @@
+﻿@model Product
+
+<div class="card text-center">
+    <div class="card-header">
+        Ürün Detayı
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">Ürün Adı : @Model.Name</h5>
+        <p class="card-text"><b> Ürün Id si :</b>@Model.Id </p>
+        <p class="card-text"><b> Ürün Stoğu :</b>@Model.Stock </p>
+        <p class="card-text"><b> Ürün Değeri :</b>@Model.Price </p>
+        <p class="card-text"><b>Ürün Açıklaması :</b> @Model.Description </p>
+        <p class="card-text"><b>Ürün Sağlayıcısı :</b> @Model.Dealer </p>
+        <a asp-controller="Product" asp-action="Index" class="btn btn-primary">Ürünler Listesine Git.</a>
+    </div>
+</div>
+

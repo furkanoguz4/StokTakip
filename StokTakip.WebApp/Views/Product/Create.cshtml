@@ -1,0 +1,30 @@
+﻿@model ProductCreateDto
+
+<form asp-controller="Product" asp-action="Create" method="post" >
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label">İsim</label>
+        <input asp-for="Name" type="text" class="form-control" >
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Price" class="form-label">Değeri</label>
+        <input asp-for="Price" type="number" class="form-control" >
+    </div>
+    
+    <div class="mb-3">
+        <label asp-for="Description" class="form-label">Açıklaması</label>
+        <input asp-for="Description" type="text" class="form-control">
+    </div>
+    
+    <div class="mb-3">
+        <label asp-for="Dealer" class="form-label">Sağlayıcı</label>
+        <input asp-for="Dealer" type="text" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Stock" class="form-label">Stok</label>
+        <input asp-for="Stock" type="number" class="form-control">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Ürün Kaydet</button>
+</form>
